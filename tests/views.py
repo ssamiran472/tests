@@ -1,3 +1,6 @@
 from django.http import HttpResponse
+import datetime
+
 def index(request):
-    return HttpResponse('<h1>hi</h1>')
+    now = datetime.datetime.now()
+    return HttpResponse(now)
